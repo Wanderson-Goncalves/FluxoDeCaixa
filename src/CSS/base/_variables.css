@@ -1,0 +1,24 @@
+:root{
+
+    --background-color:linear-gradient(155.17deg, #4D4B4D 14%, rgba(86, 86, 86, 0.83) 60.22%, #999499 88.76%);
+    --text-color:#E5DFE5;
+
+    --text-family: 'Mada', sans-serif;
+
+    --text-size: 1.5rem;
+    --title-size: 2rem;
+    --subtitle-size: 1.75rem;
+
+    
+    --caption: 500;
+    --light: 200;
+    --title weight: 700 ;
+    --running-text-weight: 400;
+
+
+
+
+
+
+
+}
