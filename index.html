@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mada:wght@200;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Viabilidade de Projetos</title>
-    <link rel="stylesheet" href="./src/CSS/base/index.css" />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;400;500;700&display=swap" rel="stylesheet" />
 
-  <body>
-    <header class="header">
-      <img src="./src/img/Logo.svg" alt="Logo" class="logo" />
-      <h1>Viabilidade de Projetos</h1>
-    </header>
-    <main>
-      <section class="destaque">
-        <p>Verifique como vai a saúde do teu negócio!</p>
-      </section>
+  <title>Viabilidade de Projetos</title>
+  <link rel="stylesheet" href="./src/CSS/base/index.css" />
+</head>
 
-      <section>
-        <h3>Inserir conta</h3>
-        <div>
-          <label for="conta">Conta</label>
-          <input type="text" name="conta" id="conta" placeholder="Telefone" />
-          <label for="valor">Valor</label>
-          <input type="text" name="valor" id="valor" placeholder="R$185,00 " />
-        </div>
+<body>
+  <header class="header">
+    <img src="./src/img/Logo.svg" alt="Logo" class="logo" />
+    <h1>Viabilidade de Projetos</h1>
+  </header>
 
-        <input type="submit" value="Adicionar em Dispesas Fixas" />
-        <input type="submit" value="Adicionar em Dispesas Variáveis" />
+  <main>
+    <section class="destaque">
+      <p>Verifique como vai a saúde do teu negócio!</p>
+    </section>
 
-        <div class="tabelas__contas">
-          <table class="tabelas__contas--fixas" cellspacing="10">
-            <caption>
-              Dispesas fixas
-            </caption>
-            <thead>
-              <th>Nome</th>
-              <th>Valor</th>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Luz</th>
-                <td>R$ 250,00</td>
-              </tr>
-              <tr>
-                <th>Água</th>
-                <td>R$ 150,00</td>
-              </tr>
-            </tbody>
-            <tfoot>
-                <th>Total</th>
-                <td>R$400,00</td>
-            </tfoot>
-          </table>
+    <section class="container">
+      <div class="container__formulario">
+        <form>
+          <legend>
+            <h3>Inserir conta</h3>
+          </legend>
 
-          <table class="tabelas__contas--variaveis" >
-            <caption>
-              Dispesas variáveis
-            </caption>
-            <thead>
-              <th>Nome</th>
-              <th>Valor</th>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Luz</th>
-                <td>R$ 250,00</td>
-              </tr>
-              <tr>
-                <th>Água</th>
-                <td>R$ 150,00</td>
-              </tr>
-            </tbody>
-            <tfoot>
-                <th>Total</th>
-                <td>R$400,00</td>
-            </tfoot>
-          </table>
-        </div>
-      </section>
-    </main>
-  </body>
+          <fieldset>
+            <label for="conta">Conta</label>
+            <input type="text" name="conta" class="container__formula--dispesas" id="conta" placeholder="Telefone" />
+            <label for="valor">Valor</label>
+            <input type="text" name="valor" class="container__formula--dispesas" id="valor" placeholder="R$185,00 " />
+          </fieldset>
+
+          <input type="submit" class="container__formula--adicionar" value="Adicionar em Dispesas Fixas" />
+          <input type="submit" class="container__formula--adicionar" value="Adicionar em Dispesas Variáveis" />
+        </form>
+      </div>
+
+      <div class="container__tabelas">
+        <table class="tabelas__contas--fixas" cellspacing="10">
+          <caption>
+            Dispesas fixas
+          </caption>
+          <thead>
+            <th>Nome</th>
+            <th>Valor</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Luz</th>
+              <td>R$ 250,00</td>
+            </tr>
+            <tr>
+              <th>Água</th>
+              <td>R$ 150,00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <th>Total</th>
+            <td>R$400,00</td>
+          </tfoot>
+        </table>
+
+        <table class="tabelas__contas--variaveis">
+          <caption>
+            Dispesas variáveis
+          </caption>
+          <thead>
+            <th>Nome</th>
+            <th>Valor</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Luz</th>
+              <td>R$ 250,00</td>
+            </tr>
+            <tr>
+              <th>Água</th>
+              <td>R$ 150,00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <th>Total</th>
+            <td>R$400,00</td>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

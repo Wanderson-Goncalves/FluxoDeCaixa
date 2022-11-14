@@ -1,8 +1,9 @@
 @import url(_reset.css);
 @import url(_variables.css);
+@import url(../components/_tabelas.css);
 
 body {
-  align-items: center;
+
   background: var(--background-color);
   color: var(--text-color);
   display: flex;
@@ -16,19 +17,61 @@ body {
   padding: 1rem;
 }
 
-.header{
-  
-    display: flex;
-    align-items: center ;
-    justify-content: left;
-    padding: 1rem;
-    gap: 0.5rem;
-
-    width: 100%;
-  
+h1 {
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
 }
 
-.logo{
-  width: 56px;  
-  
+h3 {
+  font-size: var(--subtitle-size);
+  font-weight: var(--caption);
+  padding-bottom: 1rem;
+}
+
+.header {
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 1rem;
+  gap: 0.5rem;
+  width: 100%;
+
+}
+
+.logo {
+  width: 56px;
+
+}
+
+.destaque {
+  text-align: center;
+  margin: 0% auto;
+  padding: 2rem;
+
+}
+
+.container {
+  width: 100vw;
+
+}
+.container__formulario{
+  display: flex;
+  padding-bottom: 2rem;
+}
+fieldset{
+  padding-bottom: 1rem;
+}
+label{    
+    font-size: var(--text-size);
+    margin-right: 0.5rem;
+}
+label:nth-child(3){
+  padding-left: 2rem;
+}
+.container__tabelas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
 }
