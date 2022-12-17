@@ -10,14 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;400;500;700&display=swap" rel="stylesheet" />
 
-  <title>Viabilidade de Projetos</title>
+  <title>Fluxo de Caixa</title>
   <link rel="stylesheet" href="./src/CSS/base/index.css" />
 </head>
 
 <body>
   <header class="header">
     <img src="./src/img/Logo.svg" alt="Logo" class="logo" />
-    <h1>Viabilidade de Projetos</h1>
+    <h1>Fluxo de Caixa</h1>
   </header>
 
   <main>
@@ -26,26 +26,56 @@
     </section>
 
     <section class="container">
-      <div class="container__formulario">
+      <section class="container__formulario">
         <form>
           <legend>
-            <h3>Inserir conta</h3>
+            <h3>Inserir dispesas</h3>
           </legend>
 
           <fieldset>
-            <label for="conta">Conta</label>
+            <label for="conta">Entradas/Saídas</label>
             <input type="text" name="conta" class="container__formulario--dispesas" id="conta" placeholder="Telefone" />
             <label for="valor">Valor</label>
             <input type="text" name="valor" class="container__formulario--dispesas" id="valor" placeholder="R$185,00 " />
           </fieldset>
-
+          
+          <button type="submit" class="container__formulario--adicionar">Adicionar em Entradas</button>
           <button type="submit" class="container__formulario--adicionar">Adicionar em Dispesas Fixas</button>
           <button type="submit" class="container__formulario--adicionar">Adicionar em Dispesas Variáveis</button>          
         </form>
-      </div>
+      </section>
 
-      <div class="container__tabelas">
-        <table class="tabelas__contas--fixas" cellspacing="10">
+      <section class="container__tabelas">
+        <table class="tabelas__entradas" >
+          <caption>
+            Entradas
+          </caption>
+          <thead>
+            <th>Nome</th>
+            <th>Valor</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Venda de telefone</th>
+              <td>R$ 250,00</td>
+            </tr>
+            <tr>
+              <th>Venda de carro</th>
+              <td>R$ 150,00</td>
+            </tr>
+            <tr>
+              <th>Imprestimo</th>
+              <td>R$ 150,00</td>
+            </tr>
+           
+          </tbody>
+          <tfoot>
+            <th>Total</th>
+            <td>R$400,00</td>
+          </tfoot>
+        </table>
+
+        <table class="tabelas__contas--fixas" >
           <caption>
             Dispesas fixas
           </caption>
@@ -60,6 +90,14 @@
             </tr>
             <tr>
               <th>Água</th>
+              <td>R$ 150,00</td>
+            </tr>
+            <tr>
+              <th>Telefone</th>
+              <td>R$ 150,00</td>
+            </tr>
+            <tr>
+              <th>Internet</th>
               <td>R$ 150,00</td>
             </tr>
           </tbody>
@@ -86,15 +124,32 @@
               <th>Água</th>
               <td>R$ 150,00</td>
             </tr>
+            <tr>
+              <th>Internet</th>
+              <td>R$ 150,00</td>
+            </tr>
           </tbody>
           <tfoot>
             <th>Total</th>
             <td>R$400,00</td>
           </tfoot>
         </table>
-      </div>
+      </section>
     </section>
   </main>
+
+  <footer>
+  
+      <table >
+        
+          <tr>
+            <th class="balanco">Balanço Final</th>
+            <td>R$ 250,00</td>
+          </tr>
+       
+      </table>
+    
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+form {
+    text-align: center;
+}
+
+.container__formulario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.container__formulario--dispesas {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    color: var(--text-color);
+    font-size: 1;
+    height: 1.5rem;
+    outline: none;
+    padding-left: 1rem;
+    text-transform: capitalize;
+}
+
+
+fieldset {
+
+    padding-bottom: 2rem;
+}
+
+label {
+    font-size: var(--text-size);
+    margin-right: 0.5rem;
+}
+
+label:nth-child(3) {
+    padding-left: 2rem;
+}
+
+
+
+.container__formulario--dispesas:hover {
+    border-bottom: 1px solid darkorange;
+
+}
+
+.container__formulario--dispesas::placeholder {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: var(--light);
+}
+
+@media screen and (max-width: 680px){
+
+    legend{
+        margin-bottom: 1rem;
+    }
+	
+    input{
+        
+        display: block;
+        margin: 1rem auto;
+         
+   }
+}
