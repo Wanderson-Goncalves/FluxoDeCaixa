@@ -33,15 +33,15 @@
           </legend>
 
           <fieldset>
-            <label for="conta">Entradas/Saídas</label>
-            <input type="text" name="conta" class="container__formulario--dispesas" id="conta" placeholder="Telefone" />
+            <label for="conta" >Entradas/Saídas</label>
+            <input type="text" name="conta" class="container__formulario--dispesas" id="nomeDespesa" placeholder="Telefone" />
             <label for="valor">Valor</label>
-            <input type="text" name="valor" class="container__formulario--dispesas" id="valor" placeholder="R$185,00 " />
+            <input type="text" name="valor" class="container__formulario--dispesas" id="#valorDespesa" placeholder="R$185,00 " />
           </fieldset>
           
-          <button type="submit" class="container__formulario--adicionar">Adicionar em Entradas</button>
-          <button type="submit" class="container__formulario--adicionar">Adicionar em Dispesas Fixas</button>
-          <button type="submit" class="container__formulario--adicionar">Adicionar em Dispesas Variáveis</button>          
+          <button type="submit" class="container__formulario--adicionar" id="adicionarEntradas">Adicionar em Entradas</button>
+          <button type="submit" class="container__formulario--adicionar" id="adicionarDispesasFixas">Adicionar em Dispesas Fixas</button>
+          <button type="submit" class="container__formulario--adicionar" id="adicionarDispesasVariaveis">Adicionar em Dispesas Variáveis</button>          
         </form>
       </section>
 
@@ -150,6 +150,10 @@
       </table>
     
   </footer>
+
+
+  <script src="./src/JS/jquery.js"></script>
+  <script src="./src/JS/main.js"></script>
 </body>
 
 </html>
