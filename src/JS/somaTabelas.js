@@ -6,28 +6,22 @@ function soma(categoria) {
         total += parseFloat($(this).text());
     });
 
-     $(`#${categoria} tfoot td`).text(total);
+    $(`#${categoria} tfoot td`).text(total);
 
     resultado();
 
 }
 
 function resultado() {
-  
 
-    balancoFinal = $("#balancoFinal");
+    let balancoFinal = $("#balancoFinal");
 
-    totalEntrada = $("#entrada tfoot td").text();
-    totalContasFixas = parseFloat($("#contasFixas tfoot td").text());
-    totalContasVariaveis = parseFloat($("#contasVariaveis tfoot td").text());
-   
-     let resultadoFinal = totalEntrada - (totalContasFixas + totalContasVariaveis);
+    let totalEntrada = $("#entrada tfoot td").text() == 0 ? 0 : $("#entrada tfoot td").text();
+    let totalContasFixas = $("#contasFixas tfoot td").text() == 0 ? 0 : $("#contasFixas tfoot td").text();
+    let totalContasVariaveis = $("#contasVariaveis tfoot td").text() == 0 ? 0 : $("#contasVariaveis tfoot td").text();
+
+    let resultadoFinal = parseFloat(totalEntrada) - (parseFloat(totalContasFixas) + parseFloat(totalContasVariaveis));
     balancoFinal.text(resultadoFinal);
-
-    return balancoFinal;
-
-
-
 
 }
 

@@ -11,7 +11,7 @@ function inserirDispesa(event) {
     let tabela = $("#" + categoria).find("tbody");
     inserirConta(tabela);   
     soma(categoria);
-    
+    $("#nomeDespesa").focus();    
     
 
 }
@@ -21,12 +21,13 @@ function inserirConta(tabela) {
     let corpoTabela = tabela;
     let nomeDespesa = $("#nomeDespesa").val();
     let valorDespesa = $("#valorDespesa").val();    
+    
 
     let linha = novaLinha(nomeDespesa, valorDespesa);
     corpoTabela.prepend(linha);
 
-    // nomeDespesa = $("#nomeDespesa").val("");
-    // valorDespesa = $("#valorDespesa").val("");
+    nomeDespesa = $("#nomeDespesa").val("");
+    valorDespesa = $("#valorDespesa").val("");
     
 }
 
