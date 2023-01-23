@@ -35,43 +35,31 @@
           <fieldset>
             <label for="conta" >Entradas/Saídas</label>
             <input type="text" name="conta" class="container__formulario--dispesas" id="nomeDespesa" placeholder="Telefone" />
-            <label for="valor">Valor</label>
-            <input type="text" name="valor" class="container__formulario--dispesas" id="valorDespesa" placeholder="R$185,00 " />
+            <label for="valor"> Valor <b>R$</b></label>
+            <input type="text" name="valor" class="container__formulario--dispesas" id="valorDespesa" placeholder="185,00 " />
           </fieldset>
           
-          <button type="submit" class="container__formulario--adicionar" id="adicionarEntradas">Adicionar em Entradas</button>
-          <button type="submit" class="container__formulario--adicionar" id="adicionarDispesasFixas">Adicionar em Dispesas Fixas</button>
-          <button type="submit" class="container__formulario--adicionar" id="adicionarDispesasVariaveis">Adicionar em Dispesas Variáveis</button>          
+          <button type="submit" class=" btn__adicionar" value="entrada" id="adicionarEntradas">Adicionar em Entradas</button>
+          <button type="submit" class=" btn__adicionar" value="contasFixas" id="adicionarDispesasFixas">Adicionar em Dispesas Fixas</button>
+          <button type="submit" class=" btn__adicionar" value="contasVariaveis" id="adicionarDispesasVariaveis">Adicionar em Dispesas Variáveis</button>          
         </form>
       </section>
 
       <section class="container__tabelas">
-        <table class="tabela__entrada" >
+        <table class="tabela__entrada" id="entrada" >
           <caption>
             Entradas
           </caption>
           <thead>
             <th>Nome</th>
-            <th>Valor</th>
+            <th>Valor <i>R$</i></th>
           </thead>
           <tbody>
-            <tr>
-              <th>Venda de telefone</th>
-              <td>R$ 250,00</td>
-            </tr>
-            <tr>
-              <th>Venda de carro</th>
-              <td>R$ 150,00</td>
-            </tr>
-            <tr>
-              <th>Imprestimo</th>
-              <td>R$ 150,00</td>
-            </tr>
-           
+          
           </tbody>
           <tfoot>
-            <th>Total</th>
-            <td>R$400,00</td>
+            <th>Total <i>R$</i></th>
+            <td></td>
           </tfoot>
         </table>
 
@@ -81,57 +69,31 @@
           </caption>
           <thead>
             <th>Nome</th>
-            <th>Valor</th>
+            <th>Valor <i>R$</i></th>
           </thead>
           <tbody>
-            <tr>
-              <th>Luz</th>
-              <td>R$ 250,00</td>
-            </tr>
-            <tr>
-              <th>Água</th>
-              <td>R$ 150,00</td>
-            </tr>
-            <tr>
-              <th>Telefone</th>
-              <td>R$ 150,00</td>
-            </tr>
-            <tr>
-              <th>Internet</th>
-              <td>R$ 150,00</td>
-            </tr>
+           
           </tbody>
           <tfoot>
-            <th>Total</th>
-            <td>R$400,00</td>
+            <th>Total <i>R$</i></th>
+            <td></td>
           </tfoot>
         </table>
 
-        <table class="tabela__contas--variaveis">
+        <table class="tabela__contas--variaveis" id="contasVariaveis">
           <caption>
             Dispesas variáveis
           </caption>
           <thead>
             <th>Nome</th>
-            <th>Valor</th>
+            <th>Valor <i>R$</i></th>
           </thead>
           <tbody>
-            <tr>
-              <th>Luz</th>
-              <td>R$ 250,00</td>
-            </tr>
-            <tr>
-              <th>Água</th>
-              <td>R$ 150,00</td>
-            </tr>
-            <tr>
-              <th>Internet</th>
-              <td>R$ 150,00</td>
-            </tr>
+           
           </tbody>
           <tfoot>
-            <th>Total</th>
-            <td>R$400,00</td>
+            <th>Total <i>R$</i></th>
+            <td></td>
           </tfoot>
         </table>
       </section>
@@ -143,8 +105,8 @@
       <table >
         
           <tr>
-            <th class="balanco">Balanço Final</th>
-            <td>R$ 250,00</td>
+            <th class="balanco" >Balanço Final <i>R$</i></th>
+            <td id="balancoFinal"></td>
           </tr>
        
       </table>
@@ -154,6 +116,7 @@
 
   <script src="./src/JS/jquery.js"></script>
   <script src="./src/JS/main.js"></script>
+  <script src="./src/JS/somaTabelas.js"></script>
 </body>
 
 </html>
