@@ -35,8 +35,8 @@
           <fieldset>
             <label for="conta" >Entradas/Saídas</label>
             <input type="text" name="conta" class="container__formulario--dispesas" id="nomeDespesa" placeholder="Telefone"  required/>
-            <label for="valor"> Valor <b>R$</b></label>
-            <input type="text" name="valor" class="container__formulario--dispesas" id="valorDespesa" placeholder="185,00 " required/>
+            <label for="valor"> Valor</label>
+            <input type="text" name="valor" class="container__formulario--dispesas"  id="valorDespesa"  required/>
           </fieldset>
           
           <button type="submit" class=" btn__adicionar" value="entrada" id="adicionarEntradas">Adicionar em Entradas</button>
@@ -52,13 +52,13 @@
           </caption>
           <thead>
             <th>Nome</th>
-            <th>Valor <i>R$</i></th>
+            <th>Valor</th>
           </thead>
           <tbody>
           
           </tbody>
           <tfoot>
-            <th>Total <i>R$</i></th>
+            <th>Total</th>
             <td></td>
           </tfoot>
         </table>
@@ -69,13 +69,13 @@
           </caption>
           <thead>
             <th>Nome</th>
-            <th>Valor <i>R$</i></th>
+            <th>Valor</th>
           </thead>
           <tbody>
            
           </tbody>
           <tfoot>
-            <th>Total <i>R$</i></th>
+            <th>Total </th>
             <td></td>
           </tfoot>
         </table>
@@ -86,13 +86,13 @@
           </caption>
           <thead>
             <th>Nome</th>
-            <th>Valor <i>R$</i></th>
+            <th>Valor </th>
           </thead>
           <tbody>
            
           </tbody>
           <tfoot>
-            <th>Total <i>R$</i></th>
+            <th>Total </th>
             <td></td>
           </tfoot>
         </table>
@@ -105,7 +105,7 @@
       <table >
         
           <tr>
-            <th class="balanco" >Balanço Final <i>R$</i></th>
+            <th class="balanco" >Balanço Final</th>
             <td id="balancoFinal"></td>
           </tr>
        
@@ -115,6 +115,7 @@
 
 
   <script src="./src/JS/jquery.js"></script>
+  <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
   <script src="./src/JS/main.js"></script>
   <script src="./src/JS/somaTabelas.js"></script>
 </body>

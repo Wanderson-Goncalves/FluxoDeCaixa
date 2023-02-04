@@ -1,5 +1,15 @@
 
+
 const botoes = $('.btn__adicionar');
+
+SimpleMaskMoney.setMask("#valorDespesa", {   
+    prefix: 'R$ ',
+    fixed: true,
+    fractionDigits: 2,
+    decimalSeparator: ',',
+    thousandsSeparator: '',
+    cursor: 'end'
+});
 
 
 botoes.on('click',inserirDispesa);
